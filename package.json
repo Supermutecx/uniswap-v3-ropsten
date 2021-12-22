@@ -1,0 +1,22 @@
+{
+  "name": "uniswap-v3-ropsten",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ murano1996/uniswap-v3-ropsten",
+    "create-local": "graph create --node http://localhost:8020/ murano1996/uniswap-v3-ropsten",
+    "remove-local": "graph remove --node http://localhost:8020/ murano1996/uniswap-v3-ropsten",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 murano1996/uniswap-v3-ropsten"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.20.0",
+    "@graphprotocol/graph-ts": "^0.20.0",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.2"
+  }
+}
